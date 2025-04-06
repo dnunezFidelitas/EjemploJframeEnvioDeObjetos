@@ -78,7 +78,7 @@ public class JframePrincipal extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
+        // esta es la logica del boton que yo agregue
         System.out.println("ejemplojframeenviodeobjetos.JframePrincipal.jButton1ActionPerformed()");
         datos.estudiantes[1].setNombre("LE CAMBIE EL NOMBRE");
         jTextArea1.setText(datos.toString());
@@ -119,11 +119,11 @@ public class JframePrincipal extends javax.swing.JFrame {
             public void run() {
                 JframePrincipal frame = new JframePrincipal();
                  
-                  // Configuración esencial para maximización correcta
+                // Configuración esencial para maximización correcta
                 frame.setLayout(new BorderLayout());  // 1. Layout principal del JFrame
                 frame.jPanel1.setLayout(new BorderLayout()); // 2. Layout del panel principal
             
-               // 3. Asegurar que el panel ocupe todo el espacio
+                // 3. Asegurar que el panel ocupe todo el espacio
                 frame.add(frame.jPanel1, BorderLayout.CENTER);
             
                 // 4. Configuración de componentes
